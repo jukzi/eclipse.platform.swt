@@ -152,7 +152,7 @@ public class SpyView extends ViewPart {
 	 */
 	@Override
 	public void setFocus() {
-		if (output != null & !output.isDisposed()) output.setFocus();
+		if (output != null && !output.isDisposed()) output.setFocus();
 	}
 
 	private String getOSHandle(Control control) {

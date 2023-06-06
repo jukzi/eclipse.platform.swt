@@ -51,7 +51,7 @@ class MenuTab extends Tab {
 	 */
 	void closeAllShells() {
 		for (int i = 0; i<shellCount; i++) {
-			if (shells[i] != null & !shells [i].isDisposed ()) {
+			if (shells[i] != null && !shells [i].isDisposed ()) {
 				shells [i].dispose();
 			}
 		}

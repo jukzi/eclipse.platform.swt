@@ -627,7 +627,7 @@ public class CTabFolderRenderer {
 		boolean selected = (state & SWT.SELECTED) != 0;
 		Color defaultBackground = selected && parent.shouldHighlight() ? parent.selectionBackground : parent.getBackground();
 		Image image = selected ? parent.selectionBgImage : null;
-		Color[] colors = selected & parent.shouldHighlight() ? parent.selectionGradientColors : parent.gradientColors;
+		Color[] colors = selected && parent.shouldHighlight() ? parent.selectionGradientColors : parent.gradientColors;
 		int[] percents = selected ? parent.selectionGradientPercents : parent.gradientPercents;
 		boolean vertical = selected ? parent.selectionGradientVertical : parent.gradientVertical;
 
